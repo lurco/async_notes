@@ -20,12 +20,28 @@
 <!--    <script src="./src/js/promise.js" async defer type="module"></script>-->
 <!--    <script src="./src/js/promise_deep.js" async defer type="module"></script>-->
 <!--    <script src="./src/js/generators.js" async defer type="module"></script>-->
-    <script src="./src/js/asyncawait.js" async defer type="module"></script>
+<!--    <script src="./src/js/asyncawait.js" async defer type="module"></script>-->
+    <script src="./src/js/currencyCalculator.js" async defer type="module"></script>
     <title>Async Notes</title>
 </head>
 <body>
 
-<div class="square"></div>
+<form>
+    <label for="currencyInput">Currency</label>
+    <select id="currencyInput">
+        <option value="0">---</option>
+    </select>
+    <label for="currencyQuantity">Quantity</label>
+    <input type="number" min="0" id="currencyQuantity">
+    <label for="currencyOutput">Output currency</label>
+    <select id="currencyOutput">
+        <option value="0">---</option>
+    </select>
+</form>
+
+<div id="results"></div>
+
+<!--<div class="square"></div>-->
 
 </body>
 </html>
