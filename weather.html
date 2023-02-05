@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .btns {
+            display: flex;
+            justify-content: space-around;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+        }
+        /*.weather {*/
+        /*    width: 100%;*/
+        /*    max-width: 500px;*/
+        /*    margin-inline: auto;*/
+        /*}*/
+
+        .getWeather {
+            background-color: goldenrod;
+            margin: 2rem;
+            padding: 2rem 10rem;
+        }
+    </style>
+    <script src="./src/weatherjs/weather.js" async defer type="module"></script>
+    <title>Weather App</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <form id="weather" class="weather" tabindex="0">
+        <div class="btns">
+            <label for="city">Enter city</label>
+            <input type="text" id="city">
+            or
+            <button id="getCity" type="button">Get city for my location</button>
+        </div>
+
+        <button id="getWeather" class="getWeather" type="submit">Get weather</button>
+    </form>
+</div>
+
+
+<p id="status"></p>
+<a id="map-link" target="_blank"></a>
+
+
+</body>
+</html>
